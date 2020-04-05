@@ -1,0 +1,86 @@
+@import '../../stylesheets/partials/colors';
+@import '../../stylesheets/partials/_mixins.scss';
+@import '../../stylesheets/partials/_variables.scss';
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 300px;
+}
+
+.main-container {
+  width: 90%;
+  height: $main-height;
+  margin: 0 auto;
+  background: rgba(226, 245, 252, 0.6);
+  box-shadow: inset 0px 5px 5px 3px #76D1E5;
+}
+
+.outer-container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 5px;
+  box-shadow: inset -1px -8px 30px 6px white;
+}
+
+.case {
+  height: $case-height;
+  position: relative;
+  border: 11px inset; 
+  z-index: 10;
+  transition: top 1s;
+}
+
+.case-top {
+  background: red;
+  border-color: $red;
+  border-radius: 30px 30px 0px 0px;
+  border-bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.case-bottom {
+  background: white;
+  border-color: lightgray;
+  border-radius: 0px 0px 30px 30px; 
+  border-top: 0;
+}
+
+.circle-black {
+  @include box(black, $large-circle, $large-circle/2);
+  border: 10px solid white;
+  margin: 0 auto;
+}
+
+.circle-blue {
+  @include box($light-blue, $small-circle, $small-circle/2);
+  border: 13px inset white;
+  margin: 0 auto;
+}
+
+.top-outer {
+  display: flex;
+  align-items: flex-end;
+  border-top-left-radius: $large-circle;
+  border-top-right-radius: $large-circle;
+  border-bottom: 0;
+}
+
+.top-inner {
+  border-top-left-radius: $small-circle;
+  border-top-right-radius: $small-circle;
+  border-bottom: 0;
+}
+
+.bottom-outer {
+  border-bottom-left-radius: $large-circle;
+  border-bottom-right-radius: $large-circle;
+  border-top: 0;
+}
+
+.bottom-inner {
+  border-bottom-left-radius: $small-circle;
+  border-bottom-right-radius: $small-circle;
+  border-top: 0;
+}
