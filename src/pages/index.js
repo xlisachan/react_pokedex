@@ -5,7 +5,7 @@ import searchImg from '../assets/images/pokedex.png';
 import Search from '../components/Search';
 
 export const Home = () => (
-  <div className="home-container">
+  <center style={{marginTop: '14vh'}}>
     <img
       style={{ width: 200, marginBottom: '1rem' }}
       src={searchImg}
@@ -13,7 +13,7 @@ export const Home = () => (
     />
 
     <Search />
-  </div>
+  </center>
 );
 
 export const Loading = () => (
