@@ -1,0 +1,46 @@
+.pokemon-header {
+  font-size: .8rem;
+  margin-bottom: .6rem;
+}
+
+.pokemon-body {
+  color: #555;
+  font-size: .8rem;
+}
+
+.pokemon-type {
+  font-size: .7rem;
+  color: white;
+  margin-top: .5rem;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.status {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 2rem;
+}
+
+.status-bar {
+  height: 16px;
+  border-radius: 8px;
+  background: cornflowerblue;
+  -webkit-box-shadow: inset 1px 1px 3px 6px midnightblue;
+          box-shadow: inset 1px 1px 3px 6px midnightblue;
+}
+
+.status-outline {
+  height: 16px;
+  border-radius: 8px;
+  width: 65%;
+  -webkit-box-shadow: inset 1px 1px 3px dimgray;
+          box-shadow: inset 1px 1px 3px dimgray;
+}
+/*# sourceMappingURL=Pokemon.css.map */

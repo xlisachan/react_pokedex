@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { clearResult, pokeSearch } from '../actions/searchActions';
 import { Loading, NoMatch} from './index';
-import Pokemon from '../components/Pokemon';
+import Pokemon from './pokemon/Pokemon';
 
 class Results extends React.Component {
   componentDidMount() {
