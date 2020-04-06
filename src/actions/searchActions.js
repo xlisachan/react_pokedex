@@ -74,3 +74,26 @@ export const pokeSearch = (pokemon, history) => dispatch => {
       })
     })
 };
+
+export const getAllPokemon = () => dispatch => {
+  axios.create({
+    baseURL: apiUrl,
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  })
+    .get('?limit=802')
+    .then(({ data }) => {
+      if (data.results) {
+        return data.results.map(result=> ({
+          label: result.name
+        }))
+      }
+    })
+    .then(results => {
+      dispatch({
+        type: C.GET_UNIVERSE,
+        payload: results
+      })
+    })
+};

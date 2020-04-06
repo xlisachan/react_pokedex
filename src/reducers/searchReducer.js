@@ -5,7 +5,8 @@ const initialState = {
   fetching: false,
   searchInput: "",
   searchMatch: false,
-  searchResults: {}
+  searchResults: {},
+  universe: []
 }
 
 export default (state = initialState, action) => {
@@ -54,6 +55,12 @@ export default (state = initialState, action) => {
       return {
         ...state,
         searchInput: action.payload
+      }
+
+    case C.GET_UNIVERSE :
+      return {
+          ...state,
+          universe: action.payload
       }
 
     default:
