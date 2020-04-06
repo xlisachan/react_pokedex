@@ -12,13 +12,13 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div className="main-container">
+      <main className="main-container">
         <div className="outer-container">
           <div style={{ padding: '10px 5px' }}>
             {routes(this.getParams)}
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 };

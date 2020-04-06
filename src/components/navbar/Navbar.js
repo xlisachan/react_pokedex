@@ -4,14 +4,14 @@ import { withRouter } from 'react-router-dom';
 import Search from '../Search';
 
 const NavBar = ({ location }) => (
-  <div className="navbar-container">
+  <nav className="navbar-container">
     <div className="navbar">
       <div>
         {location.pathname === "/" ? null : <Search />}
       </div>
 
     </div>
-  </div>
+  </nav>
 );
 
 export default withRouter(NavBar);
