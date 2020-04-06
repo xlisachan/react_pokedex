@@ -1,16 +1,19 @@
 import React from 'react';
 import './Pokemon.scss';
+import PropTypes from 'prop-types';
+import Header from './sections/Header'
 import Basics from './sections/Basics';
 import Stats from './sections/Stats';
 import Abilities from './sections/Abilities';
 
-const Pokemon = ({ pokemon }) => {
+const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => {
   return (
     <>
-      <center>
-        <span style={{ fontSize: '.6rem' }}>No.</span>
-        <span style={{ fontSize: '.8rem' }}>{pokemon.id}</span>
-      </center>
+      <Header
+        pokemon={pokemon}
+        history={history}
+        onSearchPokemon={onSearchPokemon}
+      />
 
       <Basics pokemon={pokemon} />
 
@@ -19,6 +22,12 @@ const Pokemon = ({ pokemon }) => {
       <Abilities pokemon={pokemon} />
     </>
   );
+};
+
+Pokemon.propTypes = {
+  history: PropTypes.object.isRequired,
+  pokemon: PropTypes.object,
+  onSearch: PropTypes.func.isRequired
 };
 
 export default Pokemon;

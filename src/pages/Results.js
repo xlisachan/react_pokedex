@@ -13,7 +13,7 @@ class Results extends React.Component {
   };
 
   render() {
-    const { query, history, search } = this.props;
+    const { query, history, search, onSearchPokemon=f=>f } = this.props;
 
     if (search.fetching) {
       return <Loading />
@@ -28,6 +28,7 @@ class Results extends React.Component {
         query={query}
         history={history}
         pokemon={search.searchResults}
+        onSearchPokemon={onSearchPokemon}
       />
     );
   }
