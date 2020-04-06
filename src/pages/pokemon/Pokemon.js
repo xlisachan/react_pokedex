@@ -27,7 +27,7 @@ const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => {
 Pokemon.propTypes = {
   history: PropTypes.object.isRequired,
   pokemon: PropTypes.object,
-  onSearch: PropTypes.func.isRequired
+  onSearchPokemon: PropTypes.func.isRequired
 };
 
 export default Pokemon;
