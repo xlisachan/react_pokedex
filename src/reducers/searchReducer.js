@@ -4,7 +4,6 @@ const initialState = {
   error: false,
   fetching: false,
   searchInput: "",
-  searchMatch: false,
   searchResults: {},
   universe: []
 }
@@ -36,12 +35,6 @@ export default (state = initialState, action) => {
         error: true,
         fetching: false,
         searchResult: {}
-      }
-    
-    case C.SEARCH_NOMATCH:
-      return {
-        ...state,
-        nomatch: true
       }
 
     case C.SET_POKEMON:

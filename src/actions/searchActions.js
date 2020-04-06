@@ -68,9 +68,9 @@ export const pokeSearch = (pokemon, history) => dispatch => {
       dispatch({
         type: C.FETCH_CANCEL
       })
-      
+
       dispatch({
-        type: C.SEARCH_NOMATCH
+        type: C.SEARCH_ERROR
       })
     })
 };
