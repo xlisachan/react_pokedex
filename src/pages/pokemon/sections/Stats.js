@@ -13,9 +13,9 @@ const Stats = ({ pokemon }) => {
 
     return (
       <div className="pokemon-body status">
-        <div>
-          <span>{stats} </span>
-          <span>{statData}</span>
+        <div style={{display: 'flex', width: '35%'}}>
+          <div style={{width: '50%'}}>{stats} </div>
+          <div>{statData}</div>
         </div>
 
         <div className="status-outline">
