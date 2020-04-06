@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
 import { Home, NotFound } from './pages';
 import Results from './pages/Results';
+import Trainer from './pages/trainer/Trainer';
 
 const routes = (getParams) => (
   <Router>
@@ -14,6 +15,8 @@ const routes = (getParams) => (
         const { query } = getParams(location);
         return <Results query={query} history={history} />;
       }} />
+
+      <Route path="/trainer/lisa" component={Trainer} />
 
       <Route component={NotFound} />
     </Switch>
