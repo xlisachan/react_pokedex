@@ -1,6 +1,6 @@
 import React from 'react';
 import './Case.scss';
-import routes from '../../routes';
+import Main from './Main';
 
 const Case = () => (
   <div className="wrapper">
@@ -10,13 +10,7 @@ const Case = () => (
       </div>
     </div>
     
-    <div className="main-container">
-      <div className="outer-container">
-        <div style={{padding: '10px 5px'}}>
-          {routes}
-        </div>
-      </div>
-    </div>
+    <Main />
     
     <div className="case case-bottom">
       <div className="circle-black bottom-outer">

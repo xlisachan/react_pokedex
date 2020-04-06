@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 .wrapper {
   margin: 0 auto;
   max-width: 750px;
   min-width: 300px;
-  font-size: .7rem;
-  line-height: 1.5;
 }
 
 .case {

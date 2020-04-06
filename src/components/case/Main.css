@@ -1,0 +1,17 @@
+.main-container {
+  width: 90%;
+  height: 48vh;
+  margin: 0 auto;
+  background: rgba(226, 245, 252, 0.6);
+  -webkit-box-shadow: inset 0px 5px 5px 3px #76D1E5;
+          box-shadow: inset 0px 5px 5px 3px #76D1E5;
+}
+
+.outer-container {
+  height: 100%;
+  margin: 0 auto;
+  padding: 10px 5px;
+  -webkit-box-shadow: inset -1px -8px 30px 6px white;
+          box-shadow: inset -1px -8px 30px 6px white;
+}
+/*# sourceMappingURL=Main.css.map */
