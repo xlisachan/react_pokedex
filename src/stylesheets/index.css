@@ -20,6 +20,8 @@ input:focus {
 
 .input-search {
   height: 2rem;
+  font-size: .7rem;
+  text-transform: uppercase;
 }
 
 .home-container {

@@ -28,7 +28,7 @@ const Search = ({history, onSearchPokemon=f=>f}) => {
         ref={input => searchEl = input}
         className="input-search"
         type="text"
-        placeholder="Enter Pokémon"
+        placeholder="Search Pokedex"
         value={query}
         onChange={handleChange}
       />
