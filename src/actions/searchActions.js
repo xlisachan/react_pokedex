@@ -1,6 +1,7 @@
 import C from './constants';
 import axios from 'axios';
 
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 const apiUrl = 'https://pokeapi.co/api/v2/pokemon/';
 
 const setParams = ({ query }) => {
@@ -28,7 +29,7 @@ export const pokeSearch = (pokemon, history) => dispatch => {
   const url = setParams({ query: pokemon });
 
   axios.create({
-    baseURL: apiUrl,
+    baseURL: `${ proxyurl }${ apiUrl }`,
     headers: {
       'Access-Control-Allow-Origin': '*'
     }
@@ -77,7 +78,7 @@ export const pokeSearch = (pokemon, history) => dispatch => {
 
 export const getAllPokemon = () => dispatch => {
   axios.create({
-    baseURL: apiUrl,
+    baseURL: `${ proxyurl }${ apiUrl }`,
     headers: {
       'Access-Control-Allow-Origin': '*'
     }
