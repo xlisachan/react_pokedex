@@ -8,7 +8,7 @@ import Abilities from './sections/Abilities';
 
 const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => {
   return (
-    <>
+    <section className="pokemon">
       <Header
         pokemon={pokemon}
         history={history}
@@ -20,7 +20,7 @@ const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => {
       <Stats pokemon={pokemon} />
 
       <Abilities pokemon={pokemon} />
-    </>
+    </section>
   );
 };
 
