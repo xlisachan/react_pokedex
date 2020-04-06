@@ -10,7 +10,7 @@
 .outer-container {
   height: 100%;
   margin: 0 auto;
-  padding: 10px 5px;
+  padding: 10px 15px;
   -webkit-box-shadow: inset -1px -8px 30px 6px white;
           box-shadow: inset -1px -8px 30px 6px white;
 }
