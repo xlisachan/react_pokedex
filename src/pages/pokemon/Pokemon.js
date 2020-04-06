@@ -6,8 +6,7 @@ import Basics from './sections/Basics';
 import Stats from './sections/Stats';
 import Abilities from './sections/Abilities';
 
-const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => {
-  return (
+const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => (
     <section className="pokemon">
       <Header
         pokemon={pokemon}
@@ -21,8 +20,7 @@ const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => {
 
       <Abilities pokemon={pokemon} />
     </section>
-  );
-};
+);
 
 Pokemon.propTypes = {
   history: PropTypes.object.isRequired,

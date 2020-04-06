@@ -6,8 +6,8 @@ const Header = ({ history, pokemon, onSearchPokemon = f => f }) => {
   let nextPokemonId;
   let prevPokemonId;
 
-  nextPokemonId = nextPokemonId === 803 ? 1 : pokemon.id + 1;
-  prevPokemonId = prevPokemonId === 0 ? 802 : pokemon.id - 1;
+  nextPokemonId = pokemon.id + 1 === 803 ? 1 : pokemon.id + 1;
+  prevPokemonId = pokemon.id - 1 === 0 ? 802 : pokemon.id - 1;
 
   return (
     <section style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
