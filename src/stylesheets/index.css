@@ -33,4 +33,14 @@ input:focus {
   -webkit-box-shadow: inset 1px 1px 3px dimgray;
           box-shadow: inset 1px 1px 3px dimgray;
 }
+
+.caughtmon-btn {
+  color: lightgray;
+  background-color: #333A40;
+  border: 3px outset lightgray;
+  border-radius: 7px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
 /*# sourceMappingURL=index.css.map */
