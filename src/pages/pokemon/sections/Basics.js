@@ -51,11 +51,13 @@ const Basics = ({ pokemon }) => {
       <div>
         <p>{pokemon.name}</p>
 
-        <p
-          className="pokemon-type"
-          style={{ background: displayType(pokemon.type) }}
-        >
-          {pokemon.type}
+        <p style={{marginTop: 5}}>
+          <span
+            className="pokemon-type"
+            style={{ background: displayType(pokemon.type) }}
+          >
+            {pokemon.type}
+          </span>
         </p>
       </div>
     </section>
