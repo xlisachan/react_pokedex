@@ -14,6 +14,8 @@
 .pokedex {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 132px;
+      grid-template-rows: 132px;
   -ms-grid-columns: (minmax(110px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
   overflow: auto;
