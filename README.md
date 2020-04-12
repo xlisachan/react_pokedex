@@ -22,7 +22,7 @@ A catalog of information on Pokémon from the Pokémon series.
 * Add or remove Pokémon from my user profile through managing app/component-level state with Redux
 * Navigate through app via URL with React Router
 * Created dynamic page functionality with React components and Material CSS framework
-* Designed a responsive user interface for Mobile, Tablet, and Desktop devices using Sass
+* Designed a responsive user interface for Mobile, Tablet, and Desktop devices
 * Added effects with Animate.css
    
 ## Built With
