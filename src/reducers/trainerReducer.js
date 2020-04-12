@@ -2,7 +2,23 @@ import C from '../actions/constants';
 
 const initialState = {
   name: "lisa",
-  pokedex: []
+  pokedex: [
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "id": 1,
+      "name": "bulbasaur"
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "id": 4,
+      "name": "charmander"
+    },
+    {
+      "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "id": 7,
+      "name": "squirtle"
+    }
+  ]
 };
 
 const newMon = (state = {}, action) =>
