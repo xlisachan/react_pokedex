@@ -17,6 +17,10 @@ export const clearResult = () => dispatch => {
 };
 
 export const pokeSearch = (pokemon, history) => dispatch => {
+  const url = setParams({ query: pokemon });
+
+  history.push(`/pokemon/?${url}`);
+
   dispatch({
     type: C.FETCH_PENDING
   })
@@ -25,8 +29,6 @@ export const pokeSearch = (pokemon, history) => dispatch => {
     type: C.UPDATE_SEARCHINPUT,
     payload: pokemon
   })
-
-  const url = setParams({ query: pokemon });
 
   axios.create({
     baseURL: `${ proxyurl }${ apiUrl }`,
@@ -58,8 +60,6 @@ export const pokeSearch = (pokemon, history) => dispatch => {
           type: C.SET_POKEMON,
           payload: results
         })
-
-        history.push(`/pokemon/?${url}`)
       }
     })
     .catch(error => {
