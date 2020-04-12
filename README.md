@@ -37,9 +37,9 @@ A catalog of information on Pokémon from the Pokémon series.
     </div>
   </section>
 
-  <section style="height: 600px; width: auto; text-align: center">
+  <section style="width: 30%;">
     <a href="https://lisachan-pokedex.herokuapp.com/">
-      <img src="https://github.com/xlisachan/react_pokedex/blob/master/src/assets/images/Screen%20Shot%202020-04-06%20at%202.23.33%20PM.png?raw=true" alt="screenshot of Pokedex React project" />
+      <img style="height: 600px; width: auto;" src="https://github.com/xlisachan/react_pokedex/blob/master/src/assets/images/Screen%20Shot%202020-04-06%20at%202.23.33%20PM.png?raw=true" alt="screenshot of Pokedex React project" />
     </a>
   </section>
 </div>
