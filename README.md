@@ -1,4 +1,6 @@
-## Lisa's Pokédex (<a href="https://lisachan-pokedex.herokuapp.com/">https://lisachan-pokedex.herokuapp.com/</a>)
+## Lisa's Pokédex [https://lisachan-pokedex.herokuapp.com/](https://lisachan-pokedex.herokuapp.com/)*
+* <br/>Before opening the pokédex, request temporary access to demo the server via [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) 
+<br />
 -- Update of my <a href="https://github.com/xlisachan/javascript_pokedex">old Pokédex project</a> --
 <br />
 <br />
@@ -15,12 +17,6 @@ A catalog of information on Pokémon from the Pokémon series.
 <a href="https://lisachan-pokedex.herokuapp.com/">
   <img width=250px src="https://github.com/xlisachan/react_pokedex/blob/master/src/assets/images/Screen%20Shot%202020-04-06%20at%202.23.33%20PM.png?raw=true" alt="screenshot of Pokedex React project" />
 </a>
-
-## Installation
-`npm install`
-<br/>`npm start`
-<br/>[Request temporary access to the demo server](https://cors-anywhere.herokuapp.com/corsdemo)
-<br/>Open [http://localhost:5000](http://localhost:5000) to view it in the browser
 
 ## Features and Functionality
 * Built and designed app that retrieves data from Pokémon API, and showcases my collection of Pokémon
