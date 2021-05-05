@@ -1,5 +1,6 @@
-## Lisa's Pokédex [https://lisachan-pokedex.herokuapp.com/](https://lisachan-pokedex.herokuapp.com/)*
-* Before opening the pokédex, request temporary access to demo the server via [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) 
+## Lisa's Pokédex (https://lisachan-pokedex.herokuapp.com/)**
+** Before opening the pokédex, request temporary access to demo the server via [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo) 
+<br />
 <br />
 -- Update of my <a href="https://github.com/xlisachan/javascript_pokedex">old Pokédex project</a> --
 <br />
