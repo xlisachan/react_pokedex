@@ -25,7 +25,7 @@ const newMon = (state = {}, action) =>
   (action.type === C.ADD_POKEMON) ?
     action.newPokemon : state
 
-export default (state = initialState, action) => {
+const trainerReducer = (state = initialState, action) => {
   switch (action.type) {
     case C.ADD_POKEMON:
       return state.name === action.payload ?
@@ -52,3 +52,5 @@ export default (state = initialState, action) => {
       return state
   }
 };
+
+export default trainerReducer;
