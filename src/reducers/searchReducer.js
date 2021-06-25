@@ -8,7 +8,7 @@ const initialState = {
   universe: []
 }
 
-export default (state = initialState, action) => {
+const searchReducer = (state = initialState, action) => {
   switch (action.type) {
     case C.CLEAR_RESULTS:
       return {
@@ -60,3 +60,5 @@ export default (state = initialState, action) => {
       return state
   }
 }
+
+export default searchReducer;
