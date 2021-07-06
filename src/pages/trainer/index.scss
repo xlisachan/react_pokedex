@@ -1,0 +1,27 @@
+.trainer-info {
+  color: navy;
+}
+
+.trainer-stat {
+  margin-right: 14px;
+}
+
+.trainer-pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  grid-template-rows: 132px;
+  height: 31vh;
+  margin-top: 10px;
+  overflow: auto;
+  padding: 10px;
+}
+
+.trainer-pokeball {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2);
+  font-size: .6rem;
+  margin: 5px;
+  padding: 5px 10px;
+  width: 90px;
+}

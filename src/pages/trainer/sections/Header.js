@@ -1,21 +1,23 @@
 import React from 'react';
 
+import '../index.scss';
+
 const Header = ({ trainer }) => (
-  <section>
-    <div className="trainer-stats">
-      <p style={{ marginRight: "1rem" }}>Name</p>
+  <div>
+    <div>
+      <span className="trainer-stat">Name</span>
       
-      <p className="trainer-data">{trainer.name}</p>
+      <span className="trainer-info">{trainer.name}</span>
     </div>
 
-    <div className="trainer-stats">
-      <p style={{marginRight: "1rem"}}># of pokemon caught{' '}</p>
+    <div>
+      <span className="trainer-stat"># of pokemon caught</span>
 
-      <p className="trainer-data">
+      <span className="trainer-info">
         {trainer.pokedex.length} / 802
-      </p>
+      </span>
     </div>
-  </section>
+  </div>
 );
  
 export default Header;
