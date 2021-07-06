@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pokemon.scss';
 
 const Stats = ({ pokemon }) => {
   const getStatus = (stats, statData) => {

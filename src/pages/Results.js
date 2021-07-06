@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { clearResult, pokeSearch } from '../actions/searchActions';
 import { Loading, NoMatch} from './index';
-import Pokemon from './pokemon/Pokemon';
+import Pokemon from './pokemon/';
 
 const Results = ({ query, history, search, onSearchPokemon = f => f }) => {
   if (search.fetching) {

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pokemon.scss';
 import { connect } from 'react-redux';
 import { addPokemon, removePokemon } from '../../../actions/trainerActions';
 import DeleteModal from '../../../components/common/DeleteModal';

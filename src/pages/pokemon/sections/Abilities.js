@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Pokemon.scss';
 
 const Abilities = ({ pokemon }) => (
   <section>

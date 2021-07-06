@@ -1,17 +1,18 @@
 import React from 'react';
-import './Pokemon.scss';
 import PropTypes from 'prop-types';
-import Header from './sections/Header'
-import Basics from './sections/Basics';
-import Stats from './sections/Stats';
 import Abilities from './sections/Abilities';
+import Basics from './sections/Basics';
+import Header from './sections/Header'
+import Stats from './sections/Stats';
 
-const Pokemon = ({ history, pokemon, onSearchPokemon=f=>f }) => (
+import './index.scss';
+
+const Pokemon = ({ history, pokemon, onSearchPokemon = f => f }) => (
     <section className="pokemon">
       <Header
-        pokemon={pokemon}
         history={history}
         onSearchPokemon={onSearchPokemon}
+        pokemon={pokemon}
       />
 
       <Basics pokemon={pokemon} />
