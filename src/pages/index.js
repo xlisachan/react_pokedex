@@ -1,57 +1,45 @@
 import React from 'react';
-import loadingGif from '../assets/images/loading.gif';
-import notfoundImg from '../assets/images/detectivepikachu.png';
-import searchImg from '../assets/images/pokedex.png';
-import Search from '../components/Search';
+import { connect } from 'react-redux';
+import { clearResult, pokeSearch } from '../actions/searchActions';
+import { Loading, NoMatch} from '../components/index';
+import Pokemon from './pokemon';
 
-export const Home = () => (
-  <center style={{marginTop: '10vh'}}>
-    <img
-      style={{ width: 200, marginBottom: '1rem' }}
-      src={searchImg}
-      alt="pokedex logo"
+const Results = ({ query, history, search, onSearchPokemon = f => f }) => {
+  if (search.fetching) {
+    return <Loading />
+  };
+
+  if (search.error || Object.keys(search.searchResults).length === 0) {
+    return <NoMatch query={query} />
+  };
+
+  return (
+    <Pokemon
+      query={query}
+      history={history}
+      pokemon={search.searchResults}
+      onSearchPokemon={onSearchPokemon}
     />
+  );
+};
 
-    <Search />
-  </center>
-);
+const mapStateToProps = state => ({
+  search: state.search,
+  query: state.search.searchInput
+});
 
-export const Loading = () => (
-  <center>
-    <p style={{ marginBottom: 20, fontSize: '1rem' }}>Loading...</p>
+const mapDispatchToProps = dispatch => ({
+  onClearResult() {
+    dispatch(
+      clearResult()
+    )
+  },
 
-    <img
-      style={{ height: '10vh' }}
-      src={loadingGif}
-      alt="loading screen"
-    />
-  </center>
-);
+  onSearchPokemon(pokemon, history) {
+    dispatch(
+      pokeSearch(pokemon, history)
+    )
+  },
+});
 
-export const NoMatch = ({ query }) => (
-  <center>
-    <p>{query} does not exist!</p>
-
-    <p>Search for another pokemon.</p>
-
-    <img
-      style={{ height: '30vh' }}
-      src={notfoundImg}
-      alt="No pokemon found in search engine"
-    />
-  </center>
-);
-
-export const NotFound = () => (
-  <center>
-    <p>404 Error!</p>
-
-    <p>Page not found</p>
-
-    <img
-      style={{ height: '30vh' }}
-      src={notfoundImg}
-      alt="Page not found"
-    />
-  </center>
-);
+export default connect(mapStateToProps, mapDispatchToProps)(Results);

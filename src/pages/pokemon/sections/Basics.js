@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addPokemon, removePokemon } from '../../../actions/trainerActions';
-import DeleteModal from '../../../components/common/DeleteModal';
+import DeleteModal from '../../../components/DeleteModal';
 
 class Basics extends React.Component {
   state = {

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
-import { Home, NotFound } from './pages';
-import Results from './pages/Results';
+import { Home, NotFound } from './components';
+import Results from './pages';
 import Trainer from './pages/trainer/';
 
 const routes = (getParams) => (
