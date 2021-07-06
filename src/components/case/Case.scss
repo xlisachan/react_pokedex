@@ -9,20 +9,20 @@
 }
 
 .case {
+  border: 11px inset; 
   height: $case-height;
   position: relative;
-  border: 11px inset; 
-  z-index: 10;
   transition: top 1s;
+  z-index: 10;
 }
 
 .case-top {
+  align-items: flex-end;
   background: red;
   border-color: $red;
   border-radius: 30px 30px 0px 0px;
   border-bottom: 0;
   display: flex;
-  align-items: flex-end;
 }
 
 .case-bottom {
@@ -45,11 +45,11 @@
 }
 
 .top-outer {
-  display: flex;
   align-items: flex-end;
   border-top-left-radius: $large-circle;
   border-top-right-radius: $large-circle;
   border-bottom: 0;
+  display: flex;
 }
 
 .top-inner {

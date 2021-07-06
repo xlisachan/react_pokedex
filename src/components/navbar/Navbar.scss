@@ -1,15 +1,15 @@
-.navbar-container {
-  padding-bottom: 20px;
-  display: flex;
-}
-
-.navbar {
-  width: 100%;
-  display: flex;
+nav {
   align-items: center;
+  display: flex;
   justify-content: space-between;
+  padding: 10px 0;
+  width: 100%;
 }
 
-.navbar-mainbutton {
-  height: 1.3rem;
+.nav-search {
+  width: 80%;
+}
+
+.nav-mainbutton {
+  height: 24px;
 }

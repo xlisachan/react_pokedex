@@ -29,6 +29,10 @@ input {
   text-transform: uppercase;
 }
 
+.homepage {
+  padding: 5vh 0;
+}
+
 .search-form {
   max-width: 300px;
   padding: 2px 2px 2px 10px;
@@ -37,12 +41,24 @@ input {
   box-shadow: inset 1px 1px 3px dimgray;
 }
 
-.caughtmon-btn {
-  color: lightgray;
-  background-color: #333A40;
-  border: 3px outset lightgray;
+.button {
   border-radius: 7px;
   padding: 5px;
   text-align: center;
-  margin-bottom: 1.5rem;
+}
+
+.add-button {
+  background-color: lightgray;
+  border: 3px inset darkgray;
+}
+
+.caught-button {
+  background-color: #333A40;
+  border: 3px outset lightgray;
+  color: lightgray;
+}
+
+.main-image {
+  padding: 30px;
+  width: 200px;
 }

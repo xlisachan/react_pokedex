@@ -62,7 +62,7 @@ export default function MenuListComposition() {
           aria-haspopup="true"
           onClick={handleToggle}
         >
-          <img className="navbar-mainbutton" src={navbarButton} alt="navigation button" />
+          <img className="nav-mainbutton" src={navbarButton} alt="navigation button" />
         </Button>
         <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
           {({ TransitionProps, placement }) => (

@@ -49,7 +49,7 @@ const DeleteModal = ({ el, item, onClick = f => f }) => {
 
     return (
         <div>
-            <div className="caughtmon-btn" onClick={handleOpen}>Caught</div>
+            <div className="button caught-button" onClick={handleOpen}>Caught</div>
 
             <Modal
                 aria-labelledby={`${item}-modal`}
