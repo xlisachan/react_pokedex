@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Abilities = ({ pokemon }) => (
-  <section>
+  <div className="pokemon-abilities">
     <div className="pokemon-header">
       {pokemon.abilities.length > 1 ? 'Abilities' : 'Ability'}
     </div>
@@ -9,7 +9,7 @@ const Abilities = ({ pokemon }) => (
     <div className="pokemon-body">
       {pokemon.abilities.join(", ")}
     </div>
-  </section>
+  </div>
 );
 
 export default Abilities;

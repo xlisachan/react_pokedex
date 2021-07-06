@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { addPokemon, removePokemon } from '../../../actions/trainerActions';
 import DeleteModal from '../../../components/DeleteModal';
 
+import '../index.scss';
+
 class Basics extends React.Component {
   state = {
     isOwned: null,
@@ -22,26 +24,6 @@ class Basics extends React.Component {
     const rel = this.props.pokedex.filter(mon => mon.id === id);
     this.setState({ isOwned: rel.length > 0 ? true : false });
   }
-
-  deleteButton =
-    <DeleteModal
-      item={'pokemon'}
-      el={this.props.pokemon}
-      onClick={() => this.props.onRemovePokemon(this.props.trainer.name, this.props.pokemon.id)}
-    />
-
-  addButton =
-    <div
-      className="addpokemon-button"
-      onClick={() => this.props.onAddPokemon(this.props.trainer.name, {
-        img: this.props.pokemon.image,
-        id: this.props.pokemon.id,
-        name: this.props.pokemon.name
-      })
-      }
-    >
-      Add To Pokedex
-    </div>
 
   displayType = (type) => {
     switch (type) {
@@ -89,26 +71,40 @@ class Basics extends React.Component {
   render() {
     const { pokemon } = this.props;
     return (
-      <section>
-        <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div className="pokemon-basics">
+        <div className="pokemon-top">
           <img src={pokemon.image} alt={pokemon.name} />
-
           <div>
             <p>{pokemon.name}</p>
 
-            <p style={{ margin: '5px 0' }}>
-              <span
-                className="pokemon-type"
-                style={{ background: this.displayType(pokemon.type) }}
-              >
-                {pokemon.type}
-              </span>
-            </p>
+            <span
+              className="pokemon-type"
+              style={{ background: this.displayType(pokemon.type) }}
+            >
+              {pokemon.type}
+            </span>
           </div>
         </div>
 
-        {this.state.isOwned ? this.deleteButton : this.addButton}
-      </section>
+        {this.state.isOwned ?
+          <DeleteModal
+            item={'pokemon'}
+            el={this.props.pokemon}
+            onClick={() => this.props.onRemovePokemon(this.props.trainer.name, this.props.pokemon.id)}
+          />
+          :
+          <div
+            className="button add-button"
+            onClick={() => this.props.onAddPokemon(this.props.trainer.name, {
+              img: this.props.pokemon.image,
+              id: this.props.pokemon.id,
+              name: this.props.pokemon.name
+            })
+          }>
+            Add To Pokedex
+          </div>
+        }
+      </div>
     );
   };
 };

@@ -25,12 +25,12 @@ const Stats = ({ pokemon }) => {
   };
 
   return (
-    <section>
+    <div className="pokemon-stats">
       <p className="pokemon-header">Base Stats</p>
       {getStatus("hp", pokemon.hp)}
       {getStatus("atk", pokemon.atk)}
       {getStatus("def", pokemon.def)}
-    </section>
+    </div>
   );
 }
 

@@ -10,22 +10,22 @@ const Header = ({ history, pokemon, onSearchPokemon = f => f }) => {
   prevPokemonId = pokemon.id - 1 === 0 ? 802 : pokemon.id - 1;
 
   return (
-    <section style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
-      <div className="pokemon-arrows" onClick={() => onSearchPokemon(prevPokemonId, history)}>
-        <span style={{ fontSize: '.9rem', paddingRight: 2 }}><FaArrowLeft /></span>
-        <span style={{ fontSize: '.6rem' }}>{prevPokemonId}</span>
+    <div className="pokemon-nav">
+      <div className="pokemon-left" onClick={() => onSearchPokemon(prevPokemonId, history)}>
+        <span className="pokemon-arrow"><FaArrowLeft /></span>
+        <span>{prevPokemonId}</span>
       </div>
 
       <center>
-        <span style={{ fontSize: '.6rem' }}>No.</span>
-        <span style={{ fontSize: '.8rem' }}>{pokemon.id}</span>
+        <span className="pokemon-no">No.</span>
+        <span style={{fontSize: 14}}>{pokemon.id}</span>
       </center>
 
-      <div className="pokemon-arrows" onClick={() => onSearchPokemon(nextPokemonId, history)}>
-        <span style={{ fontSize: '.6rem' }}>{nextPokemonId}</span>
-        <span style={{ fontSize: '.9rem', paddingLeft: 2 }}><FaArrowRight /></span>
+      <div className="pokemon-right" onClick={() => onSearchPokemon(nextPokemonId, history)}>
+        <span>{nextPokemonId}</span>
+        <span className="pokemon-arrow"><FaArrowRight /></span>
       </div>
-    </section>
+    </div>
   );
 };
 
